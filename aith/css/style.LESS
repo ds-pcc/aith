@@ -1,0 +1,171 @@
+/********** MOBILE STYLESHEET **********/
+
+/***** Central formatting *****/
+
+// Primary font
+body, html {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***** Header *****/
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: blue;
+    margin: 2em auto;
+    width: 75%;
+}
+
+header {
+    
+    background-color: black;
+    width:100%;
+    padding: 1em 10px;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+// Hamburger menu
+.hamburger {
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height: 3.5em;
+    color: white;
+    border:0;
+    font-size:1.4em;
+    font-weight:700;
+    cursor:pointer;
+    outline:none;
+    z-index: 10;
+    padding: 0px 10px;
+}
+
+.cross {
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    color: white;
+    border:0;
+    font-size:3em;
+    line-height: 2em;
+    font-weight:700;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding: 0px 10px;
+}
+
+.menu {
+    z-index:10;
+    font-weight:700;
+    width:50%;
+    background: black;
+    position:absolute;
+    top: 75px;
+    right:0;
+    text-align:center;
+}
+
+.menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+
+.menu li {
+    display:block;
+    border-bottom:#ddd 1px solid;
+    padding:15px 0;
+}
+
+.menu li:hover {
+    display:block;
+    background: red;
+    border-bottom:#ddd 1px solid;
+    padding:15px 0;
+}
+
+.menu ul li a {
+    text-decoration:none;
+    color: white;
+    margin:0;
+}
+
+.menu ul li a:hover {
+    color: white;
+    text-decoration:none;
+}
+
+a {
+    color:#369;
+}
+
+.menu a,.menu a:hover {
+    text-decoration:none;
+    color:#666;
+}
+
+#menu-sign {
+    display: none;
+}
+
+article {
+    margin: 2em auto;
+    width: 75%;
+}
+
+figure {
+    background: rgba(144,144,144, 0.3);
+    height: 15em;
+    margin: 2em auto;
+    width: 75%;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    }
+
+/********** TABLET STYLESHEET **********/
+// The following CSS affects all screen sizes larger than 480 pixels wide.
+
+@media only screen and (min-width: 481px) {
+    .menu {
+        width: 25%;
+    }
+    
+   #menu-sign {
+       display: block;
+       position:absolute;
+       top:0;
+       right:0;
+       line-height: 3.5em;
+       color: white;
+       font-size:1.4em;
+       font-weight:700;
+       z-index: 10;
+       padding: 0px 50px;
+    }
+    
+}
+
+/********** DESKTOP STYLESHEET **********/
+// The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+@media only screen and (min-width: 1024px) {
+    .menu {
+        width: 15%;
+    }
+}
