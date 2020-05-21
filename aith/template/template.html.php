@@ -12,7 +12,6 @@
     <link href="../css/helper.css" rel="stylesheet" type="text/css">
     <!-- This is our stylesheet -->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>

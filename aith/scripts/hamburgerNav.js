@@ -5,7 +5,7 @@ $(document).ready(function() {
     
     $(".menu").hide();
     
-    $(".hamburger").show();
+   // $(".hamburger").show();
     
 
    $(".hamburger").on("click", function() {

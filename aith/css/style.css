@@ -6,27 +6,23 @@ html {
   color: black;
   font-family: 'Open Sans', sans-serif;
 }
-/***** Header *****/
+main {
+  margin-top: 3em;
+}
+/**** Header ****/
 h1 {
   color: white;
   font-size: 2.5em;
 }
-
 h2 {
-    color: blue;
-    font-size: 1.75em;
-    font-weight: bold;
-    margin: 1em auto;
-    width: 75%;
+  color: blue;
+  margin: 2em auto;
+  width: 75%;
 }
-
 header {
   background-color: black;
   width: 100%;
   padding: 1em 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .hamburger {
   background: none;
@@ -57,6 +53,9 @@ header {
   outline: none;
   z-index: 10;
   padding: 0px 10px;
+}
+.desk-menu {
+  display: none;
 }
 .menu {
   z-index: 10;
@@ -95,7 +94,8 @@ header {
   text-decoration: none;
 }
 a {
-  color: #369;
+  font-size: 1.5em;
+  color: white;
 }
 .menu a,
 .menu a:hover {
@@ -115,9 +115,65 @@ figure {
   margin: 2em auto;
   width: 75%;
 }
+form {
+  color: white;
+  background-color: black;
+  border: solid red 10px;
+  margin: 0 auto;
+  width: 90%;
+}
+form #honeypot {
+  display: none;
+}
+form fieldset {
+  margin: 1em 0 0.5em 0.5em;
+}
+form input,
+form select,
+form textarea {
+  display: inline;
+  font-size: 1em;
+  margin: 0.5em;
+  width: 12em;
+}
+form #question {
+  width: 25em;
+  height: 10em;
+  font-size: 1.5em;
+}
+form #accommodations {
+  font-size: 1.5em;
+}
+form label {
+  font-size: 1.5em;
+  display: block;
+  padding: 0.5em;
+}
+form legend {
+  font-size: 2em;
+  margin: 1em 0;
+}
+form #mysubmit {
+  font-size: 1.5em;
+  margin-left: 2em;
+  width: 5em;
+}
+.thanks {
+  font-size: 2em;
+  margin-bottom: 20em;
+  text-align: center;
+}
+.return {
+  color: red;
+  font-size: 0.5em;
+  padding: 5em 0;
+}
 footer {
   color: white;
   background-color: black;
+  font-size: 1em;
+  padding: 2em;
+  margin: 20em 0 0 0;
   text-align: center;
   width: 100%;
 }
@@ -141,7 +197,32 @@ footer {
 }
 /********** DESKTOP STYLESHEET **********/
 @media only screen and (min-width: 1024px) {
-  .menu {
-    width: 15%;
+  nav {
+    display: inline;
+  }
+  #menu-sign {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .cross {
+    display: none;
+  }
+  h1 {
+    display: inline;
+  }
+  .desk-menu {
+    display: inline;
+    text-align: right;
+    margin: 0 auto 0 20%;
+  }
+  .desk-menu ul {
+    display: inline;
+    list-style-type: none;
+  }
+  .desk-menu li {
+    display: inline;
+    padding: 1em;
   }
 }
