@@ -1,16 +1,29 @@
 /********** MOBILE STYLESHEET **********/
 
+
 /***** Central formatting *****/
 
 // Primary font
-body, html {
+body,
+html {
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Righteous, 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+html {
+    background-image: url(../pictures/dark-grey-terrazzo.png);
 }
 
 main {
-    margin-top: 3em;
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    overflow: hidden;
 }
+
 
 /**** Header ****/
 
@@ -20,48 +33,61 @@ h1 {
 }
 
 h2 {
-    color: blue;
-    margin: 2em auto;
-    width: 75%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    text-align: center;
 }
 
 header {
-    
     background-color: black;
-    width:100%;
+    border-bottom: solid white 1px;
+    width: 100%;
     padding: 1em 10px;
 }
 
 // Hamburger menu
 .hamburger {
-    background:none;
-    position:absolute;
-    top:0;
-    right:0;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
     line-height: 3.5em;
     color: white;
-    border:0;
-    font-size:1.4em;
-    font-weight:700;
-    cursor:pointer;
-    outline:none;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
     z-index: 10;
     padding: 0px 10px;
 }
 
 .cross {
-    background:none;
-    position:absolute;
-    top:0;
-    right:0;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
     color: white;
-    border:0;
-    font-size:3em;
+    border: 0;
+    font-size: 3em;
     line-height: 2em;
-    font-weight:700;
-    cursor:pointer;
-    outline:none;
-    z-index:10;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
     padding: 0px 10px;
 }
 
@@ -70,45 +96,45 @@ header {
 }
 
 .menu {
-    z-index:10;
-    font-weight:700;
-    width:50%;
+    z-index: 10;
+    font-weight: 700;
+    width: 50%;
     background: black;
-    position:absolute;
+    position: absolute;
     top: 75px;
-    right:0;
-    text-align:center;
+    right: 0;
+    text-align: center;
 }
 
 .menu ul {
-    list-style-type:none;
-    list-style-image:none;
-    margin:0;
-    padding:0;
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
-    display:block;
-    border-bottom:#ddd 1px solid;
-    padding:15px 0;
+    display: block;
+    border-bottom: #ddd 1px solid;
+    padding: 15px 0;
 }
 
 .menu li:hover {
-    display:block;
+    display: block;
     background: red;
-    border-bottom:#ddd 1px solid;
-    padding:15px 0;
+    border-bottom: #ddd 1px solid;
+    padding: 15px 0;
 }
 
 .menu ul li a {
-    text-decoration:none;
+    text-decoration: none;
     color: white;
-    margin:0;
+    margin: 0;
 }
 
 .menu ul li a:hover {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a {
@@ -116,9 +142,10 @@ a {
     color: white;
 }
 
-.menu a,.menu a:hover {
-    text-decoration:none;
-    color:#666;
+.menu a,
+.menu a:hover {
+    text-decoration: none;
+    color: #666;
 }
 
 #menu-sign {
@@ -126,15 +153,76 @@ a {
 }
 
 article {
+    font-weight: bold;
     margin: 2em auto;
-    width: 75%;
+}
+
+#about {
+    margin-top: 0;
 }
 
 figure {
-    background: rgba(144,144,144, 0.3);
-    height: 15em;
-    margin: 2em auto;
+    margin: 0.5em auto 2em auto;
     width: 75%;
+    img {
+        min-height: 10em;
+    }
+}
+
+.my_slides {
+    margin-bottom: 0;
+}
+
+.details {
+    dt {
+        color: red;
+        margin: 0.5em 0;
+    }
+    dd {
+        margin-bottom: 1em;
+    }
+}
+
+.schedule {
+    dt {
+        color: blue;
+        font-size: 1.25em;
+        margin: 1em 0 0.5em 0;
+    }
+    dd {
+        margin: 0.5em 0;
+    }
+}
+
+p,
+dl {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+#eventlist {
+    text-align: center;
+    dt {
+        background-color: red;
+        color: white;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        padding: 0.5em 0;
+    }
+    dd {
+        margin-bottom: 1em;
+        border-bottom: dashed black 2px;
+        padding-bottom: 0.5em;
+    }
+    a {
+        color: blue;
+        font-size: 1em;
+    }
+    .seemore {
+        border-bottom: none;
+    }
 }
 
 // Form
@@ -150,15 +238,17 @@ form {
     fieldset {
         margin: 1em 0 0.5em 0.5em;
     }
-    input, select, textarea {
+    input,
+    select,
+    textarea {
         display: inline;
         font-size: 1em;
         margin: 0.5em;
         width: 12em;
     }
     #question {
-        width: 25em;
-        height: 10em;
+        width: 10em;
+        height: 8em;
         font-size: 1.5em;
     }
     #accommodations {
@@ -178,7 +268,6 @@ form {
         margin-left: 2em;
         width: 5em;
     }
-
 }
 
 .thanks {
@@ -188,77 +277,142 @@ form {
 }
 
 .return {
-    color: red;
     font-size: 0.5em;
-    padding: 5em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    a {
+        color: red;
+    }
+}
+
+.feed {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.weather {
+    margin-bottom: 2em;
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#tablet-weather {
+    display: none;
+}
+
+#buttoncontainer {
+    text-align: center;
+}
+
+#contactbutton {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 footer {
     color: white;
     background-color: black;
+    border-top: solid white 1px;
     font-size: 1em;
-    padding: 2em;
-    margin: 20em 0 0 0;
+    padding: 2em 1em;
+    margin-top: 40%;
     text-align: center;
     width: 100%;
-    }
+}
+
 
 /********** TABLET STYLESHEET **********/
-// The following CSS affects all screen sizes larger than 480 pixels wide.
 
+// The following CSS affects all screen sizes larger than 480 pixels wide.
 @media only screen and (min-width: 481px) {
+    h2 {
+        font-size: 2.5em;
+    }
     .menu {
         width: 25%;
     }
-    
-   #menu-sign {
-       display: block;
-       position:absolute;
-       top:0;
-       right:0;
-       line-height: 3.5em;
-       color: white;
-       font-size:1.4em;
-       font-weight:700;
-       z-index: 10;
-       padding: 0px 50px;
+    #menu-sign {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 3.5em;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 700;
+        z-index: 10;
+        padding: 0px 50px;
+    }
+    article {
+        font-size: 1.5em;
+    }
+    #mobile-weather {
+        display: none;
+    }
+    #tablet-weather {
+        display: block;
     }
 }
 
+
 /********** DESKTOP STYLESHEET **********/
+
 // The following CSS affects all screen sizes larger than 1024 pixels wide.
 @media only screen and (min-width: 1024px) {
+    p {
+        text-align: center;
+    }
     nav {
         display: inline;
     }
-    
     #menu-sign {
         display: none;
     }
-    
     .hamburger {
         display: none;
     }
-    
     .cross {
         display: none;
     }
-    
     h1 {
         display: inline;
     }
     .desk-menu {
         display: inline;
-        text-align: right;
-        margin: 0 auto 0 20%;
+        float: right;
+        line-height: 2.6em;
     }
-    
     .desk-menu ul {
         display: inline;
-        list-style-type: none;
-}
+    }
     .desk-menu li {
-        display:inline;
+        display: inline;
         padding: 1em;
+    }
+    #eventlist {
+        width: 50%;
+    }
+    form {
+        #question {
+            width: 25em;
+            height: 10em;
+            font-size: 1.5em;
+        }
+    }
+    img {
+        display: block;
+        height: 35em;
+        margin: 0.5em auto;
+        width: 80%;
+        text-align: center;
     }
 }

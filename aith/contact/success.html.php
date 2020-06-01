@@ -21,9 +21,12 @@
         <section class="thanks">
             <p>
                 Thank you for contacting us!
-                <br> Someone will get back to you within the next 24hr business hours.
+                <br> Someone will get back to you within the next 24 business hours.
             </p>
-            <a href="../template/" class="return">RETURN TO MAIN PAGE</a>
+            <p class="return">
+                <a href="../template/">RETURN TO MAIN PAGE</a>
+            </p>
+            
         </section>
     </main>
 

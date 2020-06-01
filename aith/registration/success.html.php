@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Daniel Serrano">
 
-    <title>AITH TEMPLATE</title>
+    <title>Register Success</title>
     <!-- reset.css and helper.css are a set of common standard stylesheets that assist with reponsive design. Each stylesheet has additional notes that can be reviewed. -->
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/helper.css" rel="stylesheet" type="text/css">
@@ -21,10 +21,19 @@
 
         <section class="thanks">
             <a href="../template/" class="return">RETURN TO MAIN PAGE</a>
-            <br><br><br>
+            <br>
+            <br>
+            <br>
+            <p class="return">
+                <a href="../template/">RETURN TO MAIN PAGE</a>
+            </p>
             <p>
-                Thank you for contacting us!
-                <br> Your registration has been recorded with the following information.
+                Thank you for registering!
+            <p>
+                Remember to bring a change of clothing so you can enjoy the post-event festivities.
+            </p>
+            <p>
+                Your registration has been recorded with the following information.
             </p>
             <br>
             <br>
@@ -53,15 +62,22 @@
                 <br>
                 <br> Saturday Role:
                 <?php echo htmlspecialchars($saturdayRole, ENT_QUOTES, 'UTF-8') ?>
-                <br><br> Saturday Event:
+                <br>
+                <br> Saturday Event:
                 <?php echo htmlspecialchars($saturdayEvent, ENT_QUOTES, 'UTF-8') ?>
-                <br><br> Sunday Role:
+                <br>
+                <br> Sunday Role:
                 <?php echo htmlspecialchars($sundayRole, ENT_QUOTES, 'UTF-8') ?>
-                <br><br> Sunday Event:
+                <br>
+                <br> Sunday Event:
                 <?php echo htmlspecialchars($sundayEvent, ENT_QUOTES, 'UTF-8') ?>
             </p>
-            <br><br><br>
-            <a href="../template/" class="return">RETURN TO MAIN PAGE</a>
+            <br>
+            <br>
+            <br>
+            <p class="return">
+                <a href="../template/">RETURN TO MAIN PAGE</a>
+            </p>
         </section>
 
     </main>

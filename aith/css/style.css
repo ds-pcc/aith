@@ -4,10 +4,19 @@
 body,
 html {
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Righteous, 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+html {
+  background-image: url(../pictures/dark-grey-terrazzo.png);
 }
 main {
-  margin-top: 3em;
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  overflow: hidden;
 }
 /**** Header ****/
 h1 {
@@ -15,12 +24,25 @@ h1 {
   font-size: 2.5em;
 }
 h2 {
-  color: blue;
-  margin: 2em auto;
-  width: 75%;
+  background-color: #ff0000;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.5em 0;
+  text-align: center;
 }
 header {
   background-color: black;
+  border-bottom: solid white 1px;
   width: 100%;
   padding: 1em 10px;
 }
@@ -106,14 +128,65 @@ a {
   display: none;
 }
 article {
+  font-weight: bold;
   margin: 2em auto;
-  width: 75%;
+}
+#about {
+  margin-top: 0;
 }
 figure {
-  background: rgba(144, 144, 144, 0.3);
-  height: 15em;
-  margin: 2em auto;
+  margin: 0.5em auto 2em auto;
   width: 75%;
+}
+figure img {
+  min-height: 10em;
+}
+.my_slides {
+  margin-bottom: 0;
+}
+.details dt {
+  color: red;
+  margin: 0.5em 0;
+}
+.details dd {
+  margin-bottom: 1em;
+}
+.schedule dt {
+  color: blue;
+  font-size: 1.25em;
+  margin: 1em 0 0.5em 0;
+}
+.schedule dd {
+  margin: 0.5em 0;
+}
+p,
+dl {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+#eventlist {
+  text-align: center;
+}
+#eventlist dt {
+  background-color: red;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+}
+#eventlist dd {
+  margin-bottom: 1em;
+  border-bottom: dashed black 2px;
+  padding-bottom: 0.5em;
+}
+#eventlist a {
+  color: blue;
+  font-size: 1em;
+}
+#eventlist .seemore {
+  border-bottom: none;
 }
 form {
   color: white;
@@ -137,8 +210,8 @@ form textarea {
   width: 12em;
 }
 form #question {
-  width: 25em;
-  height: 10em;
+  width: 10em;
+  height: 8em;
   font-size: 1.5em;
 }
 form #accommodations {
@@ -164,21 +237,56 @@ form #mysubmit {
   text-align: center;
 }
 .return {
-  color: red;
   font-size: 0.5em;
-  padding: 5em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.return a {
+  color: red;
+}
+.feed {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.weather {
+  margin-bottom: 2em;
+}
+.weather iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tablet-weather {
+  display: none;
+}
+#buttoncontainer {
+  text-align: center;
+}
+#contactbutton {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 footer {
   color: white;
   background-color: black;
+  border-top: solid white 1px;
   font-size: 1em;
-  padding: 2em;
-  margin: 20em 0 0 0;
+  padding: 2em 1em;
+  margin-top: 40%;
   text-align: center;
   width: 100%;
 }
 /********** TABLET STYLESHEET **********/
 @media only screen and (min-width: 481px) {
+  h2 {
+    font-size: 2.5em;
+  }
   .menu {
     width: 25%;
   }
@@ -194,9 +302,21 @@ footer {
     z-index: 10;
     padding: 0px 50px;
   }
+  article {
+    font-size: 1.5em;
+  }
+  #mobile-weather {
+    display: none;
+  }
+  #tablet-weather {
+    display: block;
+  }
 }
 /********** DESKTOP STYLESHEET **********/
 @media only screen and (min-width: 1024px) {
+  p {
+    text-align: center;
+  }
   nav {
     display: inline;
   }
@@ -214,15 +334,29 @@ footer {
   }
   .desk-menu {
     display: inline;
-    text-align: right;
-    margin: 0 auto 0 20%;
+    float: right;
+    line-height: 2.6em;
   }
   .desk-menu ul {
     display: inline;
-    list-style-type: none;
   }
   .desk-menu li {
     display: inline;
     padding: 1em;
+  }
+  #eventlist {
+    width: 50%;
+  }
+  form #question {
+    width: 25em;
+    height: 10em;
+    font-size: 1.5em;
+  }
+  img {
+    display: block;
+    height: 35em;
+    margin: 0.5em auto;
+    width: 80%;
+    text-align: center;
   }
 }

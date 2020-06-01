@@ -1,0 +1,1 @@
+ <?php header("Location: http://danielserrano.webhostingforstudents.com/aith/home/"); ?>
