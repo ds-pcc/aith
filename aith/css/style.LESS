@@ -11,13 +11,9 @@ html {
     font-size: 1em;
 }
 
-html {
-    background-image: url(../pictures/dark-grey-terrazzo.png);
-}
-
 main {
     background-color: white;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -38,6 +34,7 @@ h2 {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    padding: 0.5em 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,12 +45,12 @@ h3 {
     font-size: 1.5em;
     font-weight: bold;
     margin: 0.5em 0;
+    padding: 0.5em 0;
     text-align: center;
 }
 
 header {
     background-color: black;
-    border-bottom: solid white 1px;
     width: 100%;
     padding: 1em 10px;
 }
@@ -163,10 +160,6 @@ article {
 
 figure {
     margin: 0.5em auto 2em auto;
-    width: 75%;
-    img {
-        min-height: 10em;
-    }
 }
 
 .my_slides {
@@ -183,15 +176,9 @@ figure {
     }
 }
 
-.schedule {
-    dt {
-        color: blue;
-        font-size: 1.25em;
-        margin: 1em 0 0.5em 0;
-    }
-    dd {
-        margin: 0.5em 0;
-    }
+p,
+dd {
+    font-family: Roboto;
 }
 
 p,
@@ -204,12 +191,28 @@ dl {
 
 #eventlist {
     text-align: center;
+    /* arrow icon left */
+    dt:before {
+        border: 0.5em solid;
+        border-color: transparent transparent transparent #f2eeef;
+        content: '';
+        display: inline-block;
+        height: 0;
+        margin: 0 0.5em;
+        vertical-align: middle;
+    }
+    /* arrow icon down */
+    dt.open:before {
+        border-color: #f2eeef transparent transparent transparent;
+        border-bottom-width: 0;
+    }
     dt {
         background-color: red;
         color: white;
         font-size: 1.5em;
         margin-bottom: 0.5em;
         padding: 0.5em 0;
+        text-align: left;
     }
     dd {
         margin-bottom: 1em;
@@ -230,8 +233,7 @@ form {
     color: white;
     background-color: black;
     border: solid red 10px;
-    margin: 0 auto;
-    width: 90%;
+    margin: 2em auto;
     #honeypot {
         display: none;
     }
@@ -305,14 +307,16 @@ form {
 
 #buttoncontainer {
     text-align: center;
+    margin-bottom: 16em;
+    margin-top: 2em;
 }
 
 #contactbutton {
-    background-color: black;
+    background-color: red;
+    border: solid black 2px;
     color: white;
     font-weight: bold;
-    margin-bottom: 1em;
-    padding: 14px 25px;
+    padding: 20px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -324,7 +328,6 @@ footer {
     border-top: solid white 1px;
     font-size: 1em;
     padding: 2em 1em;
-    margin-top: 40%;
     text-align: center;
     width: 100%;
 }
@@ -408,11 +411,16 @@ footer {
             font-size: 1.5em;
         }
     }
+    #eventlist {
+        dd {
+            font-size: 1.5em;
+        }
+    }
+    
     img {
         display: block;
-        height: 35em;
         margin: 0.5em auto;
-        width: 80%;
+        max-height: 40em;
         text-align: center;
     }
 }

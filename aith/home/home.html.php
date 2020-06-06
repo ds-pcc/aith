@@ -7,12 +7,7 @@
     <meta name="author" content="Daniel Serrano">
 
     <title>AITH</title>
-    <!-- reset.css and helper.css are a set of common standard stylesheets that assist with reponsive design. Each stylesheet has additional notes that can be reviewed. -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css">
-    <link href="../css/helper.css" rel="stylesheet" type="text/css">
-    <!-- This is our stylesheet -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <?php include '../includes/style-sheets.inc.html.php' ?>
 </head>
 
 <body>
@@ -23,13 +18,13 @@
             <h2>Annual Multisport Weekend</h2>
             <div class="slideshow">
                 <figure class="my_slides">
-                    <img src="../pictures/ace1.jpg" alt="300">
+                    <img src="../pictures/ace1-4319x2879.jpg" alt="Group of contestants running into water">
                 </figure>
                 <figure class="my_slides">
-                    <img src="../pictures/ace2.jpg" alt="logo">
+                    <img src="../pictures/ace16-4319x2879.jpg" alt="A participant running with onlookers on the sidelines">
                 </figure>
                 <figure class="my_slides">
-                    <img src="../pictures/ace3.jpg" alt="300">
+                    <img src="../pictures/ace3-4319x2879.jpg" alt="Two cycling participants with their hands raised at the lead of the group">
                 </figure>
                 <script src="../scripts/slideshow.js"></script>
             </div>

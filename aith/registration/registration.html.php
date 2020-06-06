@@ -7,17 +7,14 @@
     <meta name="author" content="Daniel Serrano">
 
     <title>Registration</title>
-    <!-- reset.css and helper.css are a set of common standard stylesheets that assist with reponsive design. Each stylesheet has additional notes that can be reviewed. -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css">
-    <link href="../css/helper.css" rel="stylesheet" type="text/css">
-    <!-- This is our stylesheet -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <?php include '../includes/style-sheets.inc.html.php' ?>
 </head>
 
 <body>
     <?php include '../includes/header.inc.html.php' ?>
 
     <main>
+        <h2>Register Today!</h2>
         <section id="registration">
             <form method="post" action=" ">
                 <fieldset>

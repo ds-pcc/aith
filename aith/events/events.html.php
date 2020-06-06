@@ -7,11 +7,7 @@
     <meta name="author" content="Daniel Serrano">
 
     <title>Events</title>
-    <!-- reset.css and helper.css are a set of common standard stylesheets that assist with reponsive design. Each stylesheet has additional notes that can be reviewed. -->
-    <link href="../css/reset.css" rel="stylesheet" type="text/css">
-    <link href="../css/helper.css" rel="stylesheet" type="text/css">
-    <!-- This is our stylesheet -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <?php include '../includes/style-sheets.inc.html.php' ?>
 </head>
 
 <body>
@@ -21,7 +17,7 @@
         <section id='longcoursetri'>
             <h2>Long Course Triathlon</h2>
             <figure>
-                <img src="../pictures/ace13.jpg">
+                <img src="../pictures/ace13.jpg" alt="Group of participants running">
             </figure>
             <article>
                 <dl class="details">
@@ -42,7 +38,7 @@
                         <?php include '../includes/bring-for-run.inc.html.php' ?>
                     </dd>
                 </dl>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Saturday, June 20th</dd>
                     <dd>Start Time: 7:00 AM </dd>
@@ -66,7 +62,7 @@
         <section id="olympictri">
             <h2>Olympic Triathlon</h2>
             <figure>
-                <img src="../pictures/ace3.jpg">
+                <img src="../pictures/ace5.jpg" alt="Three participants on their bicycles with the sun behind them">
             </figure>
             <article>
                 <dl class="details">
@@ -87,7 +83,7 @@
                         <?php include '../includes/bring-for-run.inc.html.php' ?>
                     </dd>
                 </dl>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Saturday, June 20th</dd>
                     <dd>Start Time: 7:30 AM </dd>
@@ -111,7 +107,7 @@
         <section id="sprinttri">
             <h2>Sprint Triathlon</h2>
             <figure>
-                <img src="../pictures/ace14.jpg">
+                <img src="../pictures/ace14.jpg" alt="Runners on a track sprinting">
             </figure>
             <article>
                 <dl class="details">
@@ -131,7 +127,7 @@
                         <?php include '../includes/bring-for-run.inc.html.php' ?>
                     </dd>
                 </dl>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Sunday, June 21st</dd>
                     <dd>Start Time: 8:00 AM </dd>
@@ -155,7 +151,7 @@
         <section id="tryatri">
             <h2>Try-A-Tri</h2>
             <figure>
-                <img src="../pictures/ace2.jpg">
+                <img src="../pictures/ace2.jpg" alt="Participant with elbow crutches walking">
             </figure>
             <article>
                 <p>Try-A-Tri is a novice race designed for the first time triathlete, those new to the sport, our Junior Triathletes.
@@ -177,7 +173,7 @@
                         <?php include '../includes/bring-for-run.inc.html.php' ?>
                     </dd>
                 </dl>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Sunday, June 21st</dd>
                     <dd>Start Time: 8:20 AM </dd>
@@ -201,14 +197,14 @@
         <section id="halfmarathon">
             <h2>Half-Marathon</h2>
             <figure>
-                <img src="../pictures/ace7.jpg">
+                <img src="../pictures/ace7.jpg" alt="Solo participant running and high-fiving spectators on the sidelines">
             </figure>
             <article class="details">
                 <p>13.1 mi - Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports & Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified</p>
                 <p>
                     <?php include '../includes/bring-for-run.inc.html.php' ?>
                 </p>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Saturday, June 20th</dd>
                     <dd>Start Time: 7:15 AM </dd>
@@ -232,7 +228,7 @@
         <section id="10k">
             <h2>10K</h2>
             <figure>
-                <img src="../pictures/ace10.jpg">
+                <img src="../pictures/ace10.jpg" alt="Runner crossing finish line with their hands up and crowd cheering">
             </figure>
             <article>
                 <p>
@@ -241,7 +237,7 @@
                 <p>
                     <?php include '../includes/bring-for-run.inc.html.php' ?>
                 </p>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Saturday, June 20th</dd>
                     <dd>Start Time: 7:15 AM </dd>
@@ -265,12 +261,12 @@
         <section id="splashndash">
             <h2>Splash n' Dash</h2>
             <figure>
-                <img src="../pictures/ace4.jpg">
+                <img src="../pictures/ace4.jpg" alt="Group of participants in swim suits running into the water">
             </figure>
             <article>
                 <p>Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash.
                 </p>
-                <dl class="schedule">
+                <dl class="details">
                     <dt>Schedule</dt>
                     <dd>Date: Sunday, June 21st</dd>
                     <dd>Start Time: 12:00 PM </dd>
